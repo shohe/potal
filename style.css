@@ -1,0 +1,329 @@
+body {
+    background-color: #f8f9fa!important;
+}
+
+/* ++ ---------------------------------------------------------------------------- NAV ++ */
+nav .nav-item {
+    margin: 0 10px;
+}
+#nav-login-user img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+#nav-login-user a {
+    color: rgba(0,0,0,.9);
+}
+nav .navbar-brand {
+    border-radius: 6px;
+    width: 115px;
+    height: 55px;
+}
+.brand-logo {
+    text-align: center;
+    background: #1D1D1D;
+    color: #FFF !important;
+}
+nav .navbar-brand img {
+    width: 84px;
+}
+nav .navbar-brand p {
+    font-size: 7px;
+}
+
+
+/* ++ ---------------------------------------------------------------------------- WELCOME CONTENT AREA ++ */
+#top-welcome-content {
+    background: #1D1D1D;
+    height: 284px;
+    border-radius: 27px;
+    padding: 52px;
+    margin: 24px 0 64px 0;
+}
+#top-welcome-content .row {
+    margin-top: 48px;
+}
+#top-welcome-content .row p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 4px;
+    color: #FFF;
+}
+#welcome-content-unread p {
+    font-size: 15px !important;
+    font-weight: bold;
+}
+#welcome-content-unread strong {
+    font-size: 24px;
+    margin: 0 8px;
+}
+#unread-link-button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 2px;
+    color: #FFF;
+    background: #B0D84F;
+    text-decoration: none;
+}
+#unread-link-button i {
+    margin-left: 12px;
+}
+
+#main-wrapper {
+    margin-top: 24px;
+}
+
+
+/* ++ ---------------------------------------------------------------------------- SIDE MENU ++ */
+.side-menu-container {
+    margin-bottom: 36px;
+}
+.category-item a {
+    font-weight: bold;
+    color: #FFF;
+    background: #e4e4e4;
+    border-radius: 16px;
+}
+.category-item a:hover {
+    color: rgb(244, 244, 244);
+}
+
+.tag-item a {
+    color: #b0d84f;
+    border-radius: 6px;
+    border: 1px solid #B0D84F;
+}
+.tag-item a:hover {
+    color: #9fc73f;
+}
+
+
+/* ++ ---------------------------------------------------------------------------- ARTICLE ITEM ++ */
+section .white-box-container {
+    width: 100%;
+    padding: 0;
+}
+section .item-style li {
+    margin: 0 4px 0 0 !important;
+}
+section .item-style li.article-item:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+section .item-style li.article-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-bottom: 8px;
+}
+
+.article-item {
+    width: 100%;
+    border-bottom: 1px solid #0000000f;
+}
+.article-item:hover {
+    background: #fcfdfb;
+}
+
+.article-item-box {
+    float: left;
+    padding: 32px 24px 24px 24px !important;
+    width: 100%;
+}
+.article-item-box .item-style {
+    display: inline;
+}
+.article-item-box time {
+    float: left;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    margin-right: 10px;
+}
+.article-item-box .category-item {
+    font-weight: bold;
+    color: #FFF;
+    background: #e4e4e4;
+    border-radius: 16px;
+    padding: 3px 7px;
+    font-size: 8.5px;
+    margin-right: 4px;
+}
+.article-item-box .tag-item {
+    color: #b0d84f;
+    border-radius: 3px;
+    border: 1px solid #B0D84F;
+    font-size: 8.5px;
+    padding: 2px 6px;
+    margin-right: 4px;
+}
+.article-item-box .item-style {
+    display: inline-block;
+}
+
+.article-title {
+    font-size: 19px;
+    color: #000;
+    margin: 4px 0;
+}
+
+
+/* ++ ---------------------------------------------------------------------------- COMMON ++ */
+.white-box-container {
+    background: #FFF;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 20px 12px 20px;
+    margin-bottom: 36px;
+    box-shadow: #9a9a9a17 0 1px 1px;
+}
+
+.menu-title {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+.menu-title .title-id {
+    font-size: 14px;
+    color: #9e9e9e;
+    font-weight: 400;
+    margin-right: 6px;
+}
+section .menu-title {
+    border-bottom: solid 2px #555;
+    padding-bottom: 6px;
+}
+
+.item-style {
+    list-style: none;
+    padding: 0;
+}
+.item-style li {
+    font-size: 12px;
+    display: inline;
+    float: left;
+    margin: 6px 4px;
+}
+.item-style li a {
+    padding: 3px 7px;
+    text-decoration: none;
+}
+
+a.more {
+    font-size: 13px;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    bottom: -4px;
+    color: #B0D84F;
+}
+a.more i {
+    margin-right: 5px;
+}
+a.more:hover {
+    color: #a5cc47;
+}
+
+
+/* ++ ---------------------------------------------------------------------------- FOOTER ++ */
+footer {
+    background: #2D2D2D;
+    padding-top: 88px;
+}
+footer h5 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+footer ul.list-unstyled li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300 !important;
+}
+footer ul.list-unstyled li {
+    margin-bottom: 12px;
+}
+#rights-reserved h6 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFF;
+    display: inline-block;
+    font-weight: 400 !important;
+}
+
+footer .brand-logo {
+    text-align: center;
+    background: #2D2D2D;
+    color: #FFF !important;
+    margin-top: 10px;
+    margin-right: 42px;
+}
+footer .brand-logo img {
+    width: 129px;
+}
+footer .brand-logo p {
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+footer .row {
+    padding: 0 42px;
+}
+
+footer ul.list-unstyled {
+    float: left;
+    margin-right: 80px;
+}
+
+.footer-section-col {
+    margin-left: 42px;
+}
+
+#footer-bottom p {
+    width: 100%;
+    text-align: right;
+    color: #FFF;
+    font-size: 11px;
+}
+
+
+/* ++ ---------------------------------------------------------------------------- @media ++ */
+@media (max-width: 991.98px) {
+    footer {
+        padding-top: 62px;
+    }
+    .footer-section-col {
+        /* margin-left: 0; */
+        width: 100%;
+    }
+    #footer-bottom p {
+        text-align: center;
+    }
+    footer ul.list-unstyled {
+        margin-right: 0px;
+        width: 100%;
+    }
+    footer ul.list-unstyled li {
+        float: left;
+        margin-right: 53px;
+    }
+    footer .row {
+        padding: 0;
+    }
+}
+
+
+/* ++ ---------------------------------------------------------------------------- DEBUG ++ */
+.example-row .row>.col, .example-row .row>[class^=col-] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
