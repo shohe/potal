@@ -19,6 +19,47 @@
 </head>
 
 <body>
+    <!--SP NAVIGATION-->
+    <nav class="gnav">
+        <div class="gnav-wrap">
+            <ul class="gnav-menu">
+                <li class="gnav-menu-item" style="text-align:center; margin-bottom:72px;">
+                    <a class="unread-link-button" href="#"><strong>2</strong>件の未読記事一覧へ<i
+                            class="fas fa-angle-right"></i></a>
+                </li>
+                <li class="gnav-menu-item">
+                    <h2 class="menu-title" style="text-align:center;">-カテゴリ別-</h2>
+                    <ul class="item-style">
+                        <li class="category-item"><a href="#">カテゴリ01</a></li>
+                        <li class="category-item"><a href="#">カテゴリ02</a></li>
+                        <li class="category-item"><a href="#">カテゴリ03</a></li>
+                    </ul>
+                </li>
+                <li class="gnav-menu-item" style="margin-bottom:72px;">
+                    <h2 class="menu-title" style="text-align:center;">-タグ別-</h2>
+                    <ul class="item-style">
+                        <li class="tag-item"><a href="#">#タグ01</a></li>
+                        <li class="tag-item"><a href="#">#タグ02</a></li>
+                        <li class="tag-item"><a href="#">#タグ03</a></li>
+                        <li class="tag-item"><a href="#">#タグ04</a></li>
+                        <li class="tag-item"><a href="#">#タグ05</a></li>
+                        <li class="tag-item"><a href="#">#タグ06</a></li>
+                        <li class="tag-item"><a href="#">#タグ07</a></li>
+                        <li class="tag-item"><a href="#">#タグ08</a></li>
+                        <li class="tag-item"><a href="#">#タグ09</a></li>
+                        <li class="tag-item"><a href="#">#タグ10</a></li>
+                        <li class="tag-item"><a href="#">#タグ11</a></li>
+                    </ul>
+                </li>
+                <li class="gnav-menu-item" style="text-align:center;">
+                    <a class="logout" href="">ログアウト</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--PC NAVIGATION-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="d-block d-lg-none navbar-brand brand-logo" href="#">
@@ -26,12 +67,9 @@
                 <p>加盟店舗用ポータルサイト</p>
             </a>
             <button id="menu-float-button" class="navbar-toggler" onclick="toggleMenu()">
-                <p><strong>2件</strong></br>の未読</p>
+                <p id="menu-float-unread"><strong>2件</strong></br>の未読</p>
+                <p id="menu-float-cross"><i class="fas fa-times"></i></p>
             </button>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -81,7 +119,6 @@
                 </div>
             </div>
         </div>
-
     </nav>
 
     <!-- MAIN CONTENT -->
@@ -97,7 +134,7 @@
                         <div id="welcome-content-unread" class="col">
                             <p>山田太郎さん、おかえりなさい。</p>
                             <p>未読の情報が<strong>2件</strong>あります。
-                                <a id="unread-link-button" href="#">未読の記事一覧へ<i class="fas fa-angle-right"></i></a>
+                                <a class="unread-link-button" href="#">未読の記事一覧へ<i class="fas fa-angle-right"></i></a>
                             </p>
                         </div>
                     </div>
@@ -315,12 +352,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <script>
         function toggleMenu() {
-            console.log("-");
+            $('.gnav').fadeToggle(300, 'swing', function () {
+                if ($('.gnav').is(":visible")) {
+                    $('#menu-float-unread').hide();
+                    $('#menu-float-cross').show();
+                } else {
+                    $('#menu-float-unread').show();
+                    $('#menu-float-cross').hide();
+                }
+            });
         }
     </script>
 </body>
