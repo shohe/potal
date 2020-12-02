@@ -227,6 +227,25 @@ a.more:hover {
     color: #a5cc47;
 }
 
+#menu-float-button {
+    background: #B0D84F;
+    border: none;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    font-size: 10px;
+    color: #FFF;
+}
+#menu-float-button:focus {
+    outline:0;
+}
+#menu-float-button p {
+    margin-bottom: 1.5px;
+}
+#menu-float-button strong {
+    font-size: 12px;
+}
+
 
 /* ++ ---------------------------------------------------------------------------- FOOTER ++ */
 footer {
@@ -317,6 +336,19 @@ footer ul.list-unstyled {
         padding: 0;
     }
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    nav .container {
+        padding: 0 14px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    nav .container {
+        padding: 0 14px !important;
+    }
+}
+
+
 
 
 /* ++ ---------------------------------------------------------------------------- DEBUG ++ */
