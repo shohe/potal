@@ -152,13 +152,18 @@ section .item-style li.article-item:last-child {
     font-size: 8.5px;
     margin-right: 4px;
 }
-.article-item-box .tag-item {
+.article-item-box .tag-item,
+.list-section .tag-item {
     color: #b0d84f;
     border-radius: 3px;
     border: 1px solid #B0D84F;
     font-size: 8.5px;
     padding: 2px 6px;
     margin-right: 4px;
+    display: inline;
+}
+.list-section .tag-item {
+    background: #FFF;
 }
 .article-item-box .item-style {
     display: inline-block;
@@ -195,6 +200,21 @@ section .item-style li.article-item:last-child {
 section .menu-title {
     border-bottom: solid 2px #555;
     padding-bottom: 6px;
+}
+section.list-section .menu-title {
+    padding-top: 0;
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0;
+}
+section.list-section ul.list-unstyled {
+    display: inline;
+}
+
+#tag-selected {
+    padding-bottom: 12px !important;
+    margin-bottom: 12px !important;
+    border-bottom: solid 2px #555 !important;
 }
 
 .item-style {
@@ -257,6 +277,38 @@ a.more:hover {
     display: none;
 }
 
+#bottom-pagination-wrap {
+    text-align: center;
+    margin-bottom: 120px;
+}
+#bottom-pagination-wrap .disabled {
+    opacity: 0.2;
+}
+#bottom-pagination-wrap .page-count {
+    font-weight: 400;
+    font-size: 21px;
+}
+#bottom-pagination-wrap .pagination {
+    display: inline-flex !important;
+}
+#bottom-pagination-wrap .page-link {
+    background: transparent;
+    border: none;
+    color: #000000;
+    font-weight: 600;
+    outline:0 !important;
+}
+#bottom-pagination-wrap li.active .page-link {
+    color: #b0d84f;
+    border-bottom: 2px solid #b0d84f;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 10px;
+}
+#bottom-pagination-wrap a:focus {
+    outline:0 !important;
+}
 /* ++ ---------------------------------------------------------------------------- FULL NAVIGATION ++ */
 .gnav {
     background: #2D2D2D;

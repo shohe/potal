@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>加盟店舗用ポータルサイト | トップページ</title>
+    <title>加盟店舗用ポータルサイト | [カテゴリ名]一覧ページ</title>
 </head>
 
 <body>
@@ -123,25 +123,6 @@
 
     <!-- MAIN CONTENT -->
     <div class="container">
-        <div class="row d-none d-lg-block">
-            <div class="col">
-                <div id="top-welcome-content" class="container">
-                    <div class="row">
-                        <div class="col brand-logo">
-                            <img src="img/logo.svg" alt="dr.stretchのlogo">
-                            <p>加盟店舗用ポータルサイト</p>
-                        </div>
-                        <div id="welcome-content-unread" class="col">
-                            <p>山田太郎さん、おかえりなさい。</p>
-                            <p>未読の情報が<strong>2件</strong>あります。
-                                <a class="unread-link-button" href="#">未読の記事一覧へ<i class="fas fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div id="main-wrapper" class="row">
             <!-- LEFT SIDE MENU -->
             <div id="side-menu-col" class="col-4 d-none d-lg-block">
@@ -176,53 +157,14 @@
 
             <!-- MAIN CONTENTS -->
             <div id="main-contents-col" class="col-md-12 col-lg-8">
-                <section>
-                    <h2 class="menu-title"><span class="title-id">New /</span>新着情報</h2>
-                    <div class="white-box-container">
-                        <ul class="item-style">
-                            <li class="article-item">
-                                <a class="article-item-box" href="#">
-                                    <time>2020.11.26</time>
-                                    <ul class="item-style">
-                                        <li class="category-item">カテゴリ01</li>
-                                        <li class="tag-item">#タグ01</li>
-                                        <li class="tag-item">#タグ02</li>
-                                    </ul>
-                                    <h3 class="article-title">営業再開に伴う営業時間変更及び回数券有効期限緩和について</h3>
-                                </a>
-                            </li>
-
-                            <li class="article-item">
-                                <a class="article-item-box" href="#">
-                                    <time>2020.11.26</time>
-                                    <ul class="item-style">
-                                        <li class="category-item">カテゴリ01</li>
-                                        <li class="tag-item">#タグ01</li>
-                                        <li class="tag-item">#タグ02</li>
-                                    </ul>
-                                    <h3 class="article-title">営業再開に伴う営業時間変更及び回数券有効期限緩和について</h3>
-                                </a>
-                            </li>
-
-                            <li class="article-item">
-                                <a class="article-item-box" href="#">
-                                    <time>2020.11.26</time>
-                                    <ul class="item-style">
-                                        <li class="category-item">カテゴリ01</li>
-                                        <li class="tag-item">#タグ01</li>
-                                        <li class="tag-item">#タグ02</li>
-                                    </ul>
-                                    <h3 class="article-title">営業再開に伴う営業時間変更及び回数券有効期限緩和について</h3>
-                                </a>
-                            </li>
+                <section class="list-section">
+                    <h2 class="menu-title"><span class="title-id">カテゴリ /</span>当月イベント・各種情報</h2>
+                    <h2 id="tag-selected" class="menu-title">
+                        <span class="title-id">タグ /</span>
+                        <ul class="list-unstyled">
+                            <li class="tag-item">#タグ01</li>
+                            <li class="tag-item">#タグ02</li>
                         </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="menu-title">
-                        <span class="title-id">Event /</span>当月イベント・各種情報
-                        <a class="more" href="#"><i class="fas fa-chevron-circle-right"></i>もっと見る</a>
                     </h2>
                     <div class="white-box-container">
                         <ul class="item-style">
@@ -264,6 +206,29 @@
                         </ul>
                     </div>
                 </section>
+
+                <nav id="bottom-pagination-wrap">
+                    <p class="page-count">1/3</p>
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <span class="page-link">
+                                1<span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
