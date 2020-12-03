@@ -309,6 +309,29 @@ a.more:hover {
 #bottom-pagination-wrap a:focus {
     outline:0 !important;
 }
+
+/* ++ ---------------------------------------------------------------------------- BREAD CRUMB ++ */
+.breadcrumb {
+    background: #1D1D1D;
+    margin-bottom: 64px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .3rem;
+    color: #FFF;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
+}
+.breadcrumb-item a {
+    color: #b0d84f;
+}
+.breadcrumb-item.active {
+    color: #FFF !important;
+}
+
+
 /* ++ ---------------------------------------------------------------------------- FULL NAVIGATION ++ */
 .gnav {
     background: #2D2D2D;
